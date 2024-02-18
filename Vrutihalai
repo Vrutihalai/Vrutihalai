@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+// Global variable
+int b= 10;
+
+int main() {
+    // Local variable with the same name as the global variable
+    int b = 20;
+
+    // Printing local variable using scope resolution operator
+    cout << "Local variable: " << b << endl;
+
+    // Printing global variable using scope resolution operator
+    cout << "Global variable: " << ::b << endl;
+
+    return 0;
+}
